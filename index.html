@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Aditiya | Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- AOS CSS (Animate On Scroll Library) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-xl p-4 flex justify-between items-center px-6 sm:px-12 border-b border-slate-800/80 z-50">
+        <!-- LOGO BRAND -->
+        <a href="#home" class="flex items-center gap-3 group">
+            <div class="relative">
+                <div class="absolute -inset-0.5 bg-indigo-500 rounded-xl blur opacity-30 group-hover:opacity-100 transition"></div>
+                <img src="logo.png" alt="Logo" class="relative w-13 h-12 rounded-xl object-cover border border-slate-700">
+            </div>
+            <span class="text-xl font-extrabold bg-gradient-to-r from-white via-slate-200 to-indigo-400 bg-clip-text text-transparent">Aditiyadev</span>
+        </a>
+
+        <!-- MENU NAVIGASI -->
+        <div class="flex items-center space-x-1 sm:space-x-6">
+            <a href="#home" class="px-3 py-1.5 rounded-lg text-sm font-medium hover:text-indigo-400 hover:bg-slate-800/50 transition">Home</a>
+            <a href="#about" class="px-3 py-1.5 rounded-lg text-sm font-medium hover:text-indigo-400 hover:bg-slate-800/50 transition">About</a>
+            <a href="#projects" class="px-3 py-1.5 rounded-lg text-sm font-medium hover:text-indigo-400 hover:bg-slate-800/50 transition">Projects</a>
+            <a href="#contact" class="px-3 py-1.5 rounded-lg text-sm font-medium hover:text-indigo-400 hover:bg-slate-800/50 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- KONTEN UTAMA -->
+    <main class="pt-20 pb-16 px-6 max-w-5xl mx-auto space-y-24">
+        
+        <!-- SECTION 1: HOME -->
+        <section id="home" class="min-h-[85vh] flex flex-col justify-center items-center text-center pt-8">
+            
+            <!-- STATUS BADGE -->
+            <div data-aos="fade-down" data-aos-delay="100" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-8">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Open for Opportunities & Projects
+            </div>
+
+            <!-- FOTO PROFIL MODERN -->
+            <div data-aos="zoom-in" data-aos-delay="200" class="relative mb-8 group cursor-pointer">
+                <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-md opacity-70 group-hover:opacity-100 transition duration-500"></div>
+                <img 
+                    src="foto-profil.jpg" 
+                    alt="Foto Profil" 
+                    class="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full object-cover border-4 border-slate-900 shadow-2xl mx-auto"
+                >
+            </div>
+
+            <!-- NAMA & TEKS HERO -->
+            <h1 data-aos="fade-up" data-aos-delay="300" class="text-2xl sm:text-4xl font-black tracking-tight mb-3 bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
+                Halo, saya Muhamad Aditiya
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="400" class="text-indigo-400 font-semibold text-lg sm:text-xl mb-4 tracking-wide">
+                Seorang, Frontend Developer & Tech Enthusiast
+            </p>
+            <p data-aos="fade-up" data-aos-delay="500" class="text-slate-400 text-base sm:text-lg max-w-2xl mb-10 leading-relaxed">
+                Membangun pengalaman antarmuka web modern, interaktif, dan responsif dengan performa tinggi.
+            </p>
+
+            <!-- KARTU INFO RINGKAS -->
+            <div data-aos="fade-up" data-aos-delay="600" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl text-left mb-10">
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 backdrop-blur-sm hover:border-slate-700 transition hover:-translate-y-1 duration-300">
+                    <span class="text-xs text-slate-500 uppercase tracking-wider block font-bold mb-1">Nama</span>
+                    <span class="text-sm font-medium text-indigo-400 truncate block">Muhamad Aditiya</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 backdrop-blur-sm hover:border-slate-700 transition hover:-translate-y-1 duration-300">
+                    <span class="text-xs text-slate-500 uppercase tracking-wider block font-bold mb-1">Umur</span>
+                    <span class="text-sm font-medium text-green-400 truncate block">19 Tahun</span>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 backdrop-blur-sm hover:border-slate-700 transition hover:-translate-y-1 duration-300">
+                    <span class="text-xs text-slate-500 uppercase tracking-wider block font-bold mb-1">Universitas</span>
+                    <a href="" target="_blank" class="text-sm font-medium text-pink-400 hover:underline block">Al - Ghifari</a>
+                </div>
+                <div class="bg-slate-900/60 p-4 rounded-2xl border border-slate-800/80 backdrop-blur-sm hover:border-slate-700 transition hover:-translate-y-1 duration-300">
+                    <span class="text-xs text-slate-500 uppercase tracking-wider block font-bold mb-1">Alamat</span>
+                    <span class="text-sm font-medium text-red-500 block">Bandung, Jawa Barat, Indonesia</span>
+                </div>
+            </div>
+
+            <!-- TOMBOL AKSI UTAMA -->
+            <div data-aos="fade-up" data-aos-delay="700" class="flex flex-wrap justify-center gap-4">
+                <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-indigo-600/25 transition active:scale-95">
+                    Lihat Proyek Saya ↗
+                </a>
+                <a href="https://wa.me/6285600288060" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-600/20 transition active:scale-95 flex items-center gap-2">
+                    Hubungi WA
+                </a>
+            </div>
+        </section>
+
+        <!-- SECTION 2: ABOUT -->
+        <section id="about" class="min-h-[70vh] flex flex-col justify-center scroll-mt-28">
+            <div class="max-w-3xl mx-auto w-full">
+                <span data-aos="fade-right" class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2 block">Mengenal Saya</span>
+                <h2 data-aos="fade-right" data-aos-delay="100" class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Tentang & Keahlian</h2>
+                
+                <p data-aos="fade-up" data-aos-delay="200" class="text-slate-300 text-lg leading-relaxed mb-8">
+                    Saya seorang pengembang web yang antusias menciptakan aplikasi web modern. Berfokus pada penulisan kode yang bersih, antarmuka yang ramah pengguna, serta performa aplikasi yang cepat.
+                </p>
+
+                <!-- KARTU PENCAPAIAN / HIGHLIGHT -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-10">
+                    <div data-aos="zoom-in-up" data-aos-delay="300" class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
+                        <span class="text-3xl font-black text-indigo-400 block mb-1">100%</span>
+                        <span class="text-xs text-slate-400 font-medium">Responsive Design</span>
+                    </div>
+                    <div data-aos="zoom-in-up" data-aos-delay="400" class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800 hover:border-slate-700 transition">
+                        <span class="text-3xl font-black text-purple-400 block mb-1">SPA</span>
+                        <span class="text-xs text-slate-400 font-medium">Fast Navigation</span>
+                    </div>
+                    <div data-aos="zoom-in-up" data-aos-delay="500" class="bg-slate-900/80 p-5 rounded-2xl border border-slate-800 hover:border-slate-700 transition col-span-2 sm:col-span-1">
+                        <span class="text-3xl font-black text-emerald-400 block mb-1">Clean</span>
+                        <span class="text-xs text-slate-400 font-medium">Modern Tech Stack</span>
+                    </div>
+                </div>
+
+                <h3 data-aos="fade-up" data-aos-delay="550" class="text-xl font-bold text-white mb-4">Teknologi yang Dikuasai</h3>
+                <div data-aos="fade-up" data-aos-delay="600" class="flex flex-wrap gap-2.5">
+                    <span class="bg-slate-800/80 text-green-400 px-4 py-2 rounded-xl border border-slate-700/80 text-sm font-medium hover:scale-105 transition">HTML5 & CSS3</span>
+                    <span class="bg-slate-800/80 text-blue-400 px-4 py-2 rounded-xl border border-slate-700/80 text-sm font-medium hover:scale-105 transition">JavaScript ES6+</span>
+                    <span class="bg-slate-800/80 text-pink-400 px-4 py-2 rounded-xl border border-slate-700/80 text-sm font-medium hover:scale-105 transition">React.js</span>
+                    <span class="bg-slate-800/80 text-red-400 px-4 py-2 rounded-xl border border-slate-700/80 text-sm font-medium hover:scale-105 transition">Laravel</span>
+                    <span class="bg-slate-800/80 text-indigo-400 px-4 py-2 rounded-xl border border-slate-700/80 text-sm font-medium hover:scale-105 transition">Tailwind CSS</span>
+                    <span class="bg-slate-800/80 text-orange-400 px-4 py-2 rounded-xl border border-slate-700/80 text-sm font-medium hover:scale-105 transition">REST API Integration</span>
+                    <span class="bg-slate-800/80 text-yellow-400 px-4 py-2 rounded-xl border border-slate-700/80 text-sm font-medium hover:scale-105 transition">Git & GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PROJECTS -->
+        <section id="projects" class="min-h-[70vh] flex flex-col justify-center scroll-mt-28">
+            <div data-aos="fade-up" class="text-center sm:text-left mb-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2 block">Portofolio</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">Proyek Pilihan</h2>
+                <p class="text-slate-400 text-sm">Aplikasi dan sistem web yang dibangun dengan standar kualitas modern.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- PROYEK 1: SPA PORTFOLIO -->
+                <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 hover:border-indigo-500/80 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-2 shadow-lg">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="p-2.5 bg-indigo-500/10 text-indigo-400 rounded-xl border border-indigo-500/20 font-mono text-xs">⚡ Fast & Lightweight</span>
+                            <span class="text-xs text-slate-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition mb-2">Web Portofolio SPA Modern</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Aplikasi portofolio Single Page Application tanpa reload halaman, dilengkapi animasi transisi halus dan desain responsif.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-slate-950 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">HTML5</span>
+                            <span class="text-xs bg-slate-950 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Tailwind CSS</span>
+                            <span class="text-xs bg-indigo-900/40 text-indigo-300 px-2.5 py-1 rounded-md border border-indigo-700/50">Vanilla JS</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm pt-4 border-t border-slate-800">
+                            <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium flex items-center gap-1">Live Demo ↗</a>
+                            <a href="#" class="text-slate-400 hover:text-white font-medium">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 2: REACT WORKSPACE MANAGER -->
+                <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 hover:border-cyan-500/80 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-2 shadow-lg">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="p-2.5 bg-cyan-500/10 text-cyan-400 rounded-xl border border-cyan-500/20 font-mono text-xs">⚛️ React Single Page App</span>
+                            <span class="text-xs text-slate-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition mb-2">Taskflow - Task Management App</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Aplikasi produktivitas interaktif dengan fitur drag-and-drop Kanban board, manajemen tugas berbasis kategori, dan sinkronisasi state instan.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-cyan-950/60 text-cyan-300 px-2.5 py-1 rounded-md border border-cyan-800/50">React.js</span>
+                            <span class="text-xs bg-slate-950 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Tailwind CSS</span>
+                            <span class="text-xs bg-slate-950 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Context API</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm pt-4 border-t border-slate-800">
+                            <a href="#" class="text-cyan-400 hover:text-cyan-300 font-medium flex items-center gap-1">Live Demo ↗</a>
+                            <a href="#" class="text-slate-400 hover:text-white font-medium">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 3: LARAVEL E-COMMERCE & BACKEND -->
+                <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 hover:border-rose-500/80 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-2 shadow-lg">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="p-2.5 bg-rose-500/10 text-rose-400 rounded-xl border border-rose-500/20 font-mono text-xs">🔴 Fullstack Laravel</span>
+                            <span class="text-xs text-slate-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-rose-400 transition mb-2">Sistem Informasi & Toko Online</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Platform e-commerce lengkap dengan otentikasi multi-user (Admin & Pembeli), manajemen inventaris produk, checkout transaksi, dan integrasi payment gateway.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-rose-950/60 text-rose-300 px-2.5 py-1 rounded-md border border-rose-800/50">Laravel</span>
+                            <span class="text-xs bg-slate-950 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">MySQL</span>
+                            <span class="text-xs bg-slate-950 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Tailwind CSS</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm pt-4 border-t border-slate-800">
+                            <a href="#" class="text-rose-400 hover:text-rose-300 font-medium flex items-center gap-1">Live Demo ↗</a>
+                            <a href="#" class="text-slate-400 hover:text-white font-medium">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYEK 4: DASHBOARD MANAGEMENT DATA -->
+                <div data-aos="fade-up" data-aos-delay="400" class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 hover:border-purple-500/80 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-2 shadow-lg">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="p-2.5 bg-purple-500/10 text-purple-400 rounded-xl border border-purple-500/20 font-mono text-xs">📊 Web App</span>
+                            <span class="text-xs text-slate-500">2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition mb-2">Interactive Analytics Dashboard</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Dashboard admin modern berbasis web untuk visualisasi data, statistik penjualan, dan pemantauan aktivitas pengguna.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-slate-950 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">JavaScript</span>
+                            <span class="text-xs bg-slate-950 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Tailwind UI</span>
+                            <span class="text-xs bg-purple-900/40 text-purple-300 px-2.5 py-1 rounded-md border border-purple-700/50">REST API</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-sm pt-4 border-t border-slate-800">
+                            <a href="#" class="text-purple-400 hover:text-purple-300 font-medium flex items-center gap-1">Live Demo ↗</a>
+                            <a href="#" class="text-slate-400 hover:text-white font-medium">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 4: CONTACT -->
+        <section id="contact" class="min-h-[70vh] flex flex-col justify-center items-center text-center scroll-mt-28">
+            <span data-aos="fade-down" class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2 block">Get In Touch</span>
+            <h2 data-aos="fade-up" data-aos-delay="100" class="text-3xl sm:text-4xl font-extrabold text-white mb-3">Mari Terhubung!</h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="text-slate-400 text-base max-w-lg mb-10">
+                Apakah Anda memiliki proyek, tawaran kerja sama, atau sekadar ingin berdiskusi seputar web development? Silakan hubungi saya melalui media di bawah:
+            </p>
+
+            <!-- GRID KARTU KONTAK -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-3xl text-left">
+                
+                <!-- EMAIL CARD -->
+                <a href="mailto:aditiya.m1807@gmail.com" data-aos="zoom-in" data-aos-delay="300" class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 hover:border-indigo-500/80 transition duration-300 group flex flex-col justify-between hover:-translate-y-2">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition">
+                            ✉️
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-1">Email</h3>
+                        <p class="text-xs text-slate-400 mb-4">Kirim email formal atau diskusi proyek.</p>
+                    </div>
+                    <span class="text-xs font-semibold text-indigo-400 group-hover:underline">aditiya.m1807@gmail.com ↗</span>
+                </a>
+
+                <!-- WHATSAPP CARD -->
+                <a href="https://wa.me/6285600288060" target="_blank" data-aos="zoom-in" data-aos-delay="400" class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/80 transition duration-300 group flex flex-col justify-between hover:-translate-y-2">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition">
+                            💬
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-1">WhatsApp</h3>
+                        <p class="text-xs text-slate-400 mb-4">Respon cepat via chat WhatsApp.</p>
+                    </div>
+                    <span class="text-xs font-semibold text-emerald-400 group-hover:underline">+62 856-0028-8060 ↗</span>
+                </a>
+
+                <!-- INSTAGRAM CARD -->
+                <a href="https://instagram.com/__mhmmdaditya18" target="_blank" data-aos="zoom-in" data-aos-delay="500" class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 hover:border-pink-500/80 transition duration-300 group flex flex-col justify-between hover:-translate-y-2">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white flex items-center justify-center font-bold text-xl mb-4 group-hover:scale-110 transition shadow-lg shadow-pink-500/10">
+                            📸
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-1">Instagram</h3>
+                        <p class="text-xs text-slate-400 mb-4">Ikuti aktivitas & kabar terbaru saya.</p>
+                    </div>
+                    <span class="text-xs font-semibold text-pink-400 group-hover:underline">__mhmmdaditya18 ↗</span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- AOS JS SCRIPT -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: false, // <-- Diubah ke false agar animasi berulang setiap di-scroll
+        mirror: true, // <-- Ditambahkan agar animasi juga bermain saat scroll kembali ke atas
+        easing: 'ease-out-cubic'
+    });
+</script>
+</body>
+</html>
