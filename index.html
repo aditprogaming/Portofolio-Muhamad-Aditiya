@@ -14,30 +14,61 @@
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
 
     <!-- NAVBAR -->
-    <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-xl p-4 flex justify-between items-center px-6 sm:px-12 border-b border-slate-800/80 z-50">
-        <!-- LOGO BRAND -->
-        <a href="#home" class="flex items-center gap-3 group">
-            <div class="relative">
-                <div class="absolute -inset-0.5 bg-indigo-500 rounded-xl blur opacity-30 group-hover:opacity-100 transition"></div>
-                <img src="logo.png" alt="Logo" class="relative w-13 h-12 rounded-xl object-cover border border-slate-700">
+    <nav class="bg-slate-900 border-b border-slate-800 fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            
+            <!-- LOGO -->
+            <div class="flex-shrink-0 font-bold text-xl text-white">
+                Aditiya<span class="text-indigo-500">dev</span>
             </div>
-            <span class="text-xl font-extrabold text-white drop-shadow">
-              Aditiya<span class="text-indigo-400">dev</span>
-            </span>
-        </a>
 
-        <!-- MENU NAVIGASI -->
-        <div class="flex items-center space-x-1 sm:space-x-6">
-            <a href="#home" class="px-3 py-1.5 rounded-lg text-sm font-medium hover:text-indigo-400 hover:bg-slate-800/50 transition">Home</a>
-            <a href="#about" class="px-3 py-1.5 rounded-lg text-sm font-medium hover:text-indigo-400 hover:bg-slate-800/50 transition">About</a>
-            <a href="#projects" class="px-3 py-1.5 rounded-lg text-sm font-medium hover:text-indigo-400 hover:bg-slate-800/50 transition">Projects</a>
-            <a href="#certificates" class="px-3 py-1.5 rounded-lg text-sm font-medium hover:text-indigo-400 hover:bg-slate-800/50 transition">achievement</a>
-            <a href="#contact" class="px-3 py-1.5 rounded-lg text-sm font-medium hover:text-indigo-400 hover:bg-slate-800/50 transition">Contact</a>
+            <!-- MENU DESKTOP (Sembunyi di HP, Tampil di Layar Medium/Besar) -->
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-6 text-sm font-medium">
+                    <a href="#home" class="text-white hover:text-indigo-400">Home</a>
+                    <a href="#about" class="text-slate-300 hover:text-indigo-400">About</a>
+                    <a href="#projects" class="text-slate-300 hover:text-indigo-400">Projects</a>
+                    <a href="#certificates" class="text-slate-300 hover:text-indigo-400">Certificates</a>
+                    <a href="#contact" class="text-slate-300 hover:text-indigo-400">Contact</a>
+                </div>
+            </div>
+
+            <!-- TOMBOL MENU MOBILE / HP (=) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-slate-300 hover:text-white p-2 rounded-lg focus:outline-none">
+                    <!-- Ikon Garis Tiga / Hamburger (=) -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
         </div>
-    </nav>
+    </div>
 
-    <!-- KONTEN UTAMA -->
-    <main class="pt-20 pb-16 px-6 max-w-5xl mx-auto space-y-24">
+    <!-- MENU DROPDOWN UNTUK HP -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+        <a href="#home" class="block text-white hover:text-indigo-400 py-2">Home</a>
+        <a href="#about" class="block text-slate-300 hover:text-indigo-400 py-2">About</a>
+        <a href="#projects" class="block text-slate-300 hover:text-indigo-400 py-2">Projects</a>
+        <a href="#certificates" class="block text-slate-300 hover:text-indigo-400 py-2">Certificates</a>
+        <a href="#contact" class="block text-slate-300 hover:text-indigo-400 py-2">Contact</a>
+     </div>
+      </nav>
+
+     <!-- JAVASCRIPT UNTUK BUKA/TUTUP MENU HP -->
+     <script>
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+
+     btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+     });
+     </script>
+
+     <!-- KONTEN UTAMA -->
+     <main class="pt-20 pb-16 px-6 max-w-5xl mx-auto space-y-24">
         
         <!-- SECTION 1: HOME -->
         <section id="home" class="min-h-[85vh] flex flex-col justify-center items-center text-center pt-8">
@@ -301,7 +332,7 @@
         <!-- BINGKAI FOTO SERTIFIKAT (Disesuaikan agar gambar tampil utuh) -->
         <div class="relative w-full aspect-[4/3] mb-5 rounded-xl overflow-hidden border border-slate-800 bg-slate-950/60 p-2 flex items-center justify-center group-hover:border-emerald-500/50 transition">
             <img 
-                src="Muhamad Aditiya.jpg" 
+                src="Muhamad aditiya.jpg" 
                 alt="Sertifikat Fullstack BWA" 
                 class="w-full h-full object-contain rounded-lg group-hover:scale-105 transition duration-500"
             >
